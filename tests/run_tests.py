@@ -23,12 +23,30 @@
 #
 ###############################################################################
 
-import click
+import os
+import unittest
 
-__version__ = '0.1.dev0'
+
+def get_test_file_path(filename):
+    """helper function to open test file safely"""
+
+    if os.path.isfile(filename):
+        return filename
+    else:
+        return f'tests/{filename}'
 
 
-@click.group()
-@click.version_option(version=__version__)
-def cli():
-    pass
+class WMDR2ETSTest(unittest.TestCase):
+    """WMDR2 ETS tests of tests"""
+
+    def setUp(self):
+        """setup test fixtures, etc."""
+        pass
+
+    def tearDown(self):
+        """return to pristine state"""
+        pass
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,11 +1,5 @@
-beautifulsoup4
 click
-lxml
-pyspellchecker
-python-dateutil
-geopandas
-validators
-tzwhere
-isodate
 jsonschema
-requests
+rfc3339-validator
+rfc3987
+shapely

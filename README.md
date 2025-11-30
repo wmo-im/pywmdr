@@ -1,8 +1,22 @@
 # pywmdr
 
-This is a python implementation of the WIGOS Metadata Representation Key Performance Indicators (WMDR KPIs).
+[![Build Status](https://github.com/wmo-im/pywmdr/workflows/build%20%E2%9A%99%EF%B8%8F/badge.svg)](https://github.com/wmo-im/pywmdr/actions)
+
+# WIGOS Metadata Record Test Suite
+
+pywmdr provides validation and quality assessment capabilities for the [WIGOS Metadata Record](https://wmo-im.github.io/wmdr) (WMDR2) standard.
+
+- validation against [WMDR2](https://wmo-im.github.io/wmdr2/standard/wmdr2-DRAFT.html), specifically [Annex A: Conformance Class Abstract Test Suite](https://wmo-im.github.io/wmdr2/standard/wmdr2-DRAFT.html#_conformance_class_abstract_test_suite_normative)), implementing an executable test suite against the ATS
 
 ## Installation
+
+### pip
+
+Install latest stable version from [PyPI](https://pypi.org/project/pywmdr).
+
+```bash
+pip3 install pywmdr
+```
 
 ### From source
 
@@ -14,126 +28,109 @@ cd pywmdr
 . bin/activate
 git clone https://github.com/wmo-im/pywmdr.git
 cd pywmdr
-python3 -m ensurepip
 pip3 install -r requirements.txt
-python3 setup.py build
-python3 setup.py install
+pip3 install .
 ```
-## Running 
+
+## Running
+
 From command line:
 ```bash
 # fetch version
 pywmdr --version
 
+# sync supporting configuration bundle (schemas, topics, etc.)
+pywmdr bundle sync
+
 # abstract test suite
 
-# validate metadata against abstract test suite (file on disk)
-pywmdr ats validate --file /path/to/file.xml
-# validate metadata against abstract test suite (URL)
-pywmdr ats validate --url http://example.org/path/to/file.xml
+# validate WMDR2 metadata against abstract test suite (file on disk)
+pywmdr ets validate /path/to/file.json
+
+# validate WMDR2 metadata against abstract test suite (URL)
+pywmdr ets validate https://example.org/path/to/file.json
+
+# validate WMDR2 metadata against abstract test suite (URL), but turn JSON Schema validation off
+pywmdr ets validate https://example.org/path/to/file.json --no-fail-on-schema-validation
 
 # adjust debugging messages (CRITICAL, ERROR, WARNING, INFO, DEBUG) to stdout
-pywmdr ats validate --url http://example.org/path/to/file.xml --verbosity DEBUG
+pywmdr ets validate https://example.org/path/to/file.json --verbosity DEBUG
 
 # write results to logfile
-pywmdr ats validate --url http://example.org/path/to/file.xml --verbosity DEBUG --logfile /tmp/foo.txt
-
-# key performance indicators
-
-# all key performance indicators at once # note: running KPIs automatically runs the ats
-pywmdr kpi validate --url http://example.org/path/to/file.xml --verbosity DEBUG
-
-# all key performance indicators at once, in summary
-pywmdr kpi validate --url http://example.org/path/to/file.xml --verbosity DEBUG --summary
-
-# all key performance indicators at once, with scoring rubric grouping
-pywmdr kpi validate --url http://example.org/path/to/file.xml --verbosity DEBUG --group
-
-# selected key performance indicator
-pywmdr kpi validate --kpi 20 -f /path/to/file.xml -v INFO
+pywmdr ets validate https://example.org/path/to/file.json --verbosity DEBUG --logfile /tmp/foo.txt
 ```
-Using the API:
+
+## Using the API
 ```pycon
 >>> # test a file on disk
->>> from lxml import etree
->>> from pywmdr.ats import WMDRTestSuite
->>> exml = etree.parse('examples/serafina.xml')
->>> # test ATS
->>> ts = WMDRTestSuite(exml)
->>> ts.run_tests() 
+>>> import json
+>>> from pywmdr.wmdr2.ets import WIGOSMetadataRepresentationTestSuite2
+>>> from pywmdr.errors import TestSuiteError
+>>> with open('/path/to/file.json') as fh:
+...     data = json.load(fh)
+>>> # test ETS
+>>> ts = WMOCoreMetadataProfileTestSuite2(datal)
+>>> ts.run_tests()
+>>> ts.raise_for_status()  # raises pywmdr.errors.TestSuiteError on exception with list of errors captured in .errors property
 >>> # test a URL
 >>> from urllib2 import urlopen
 >>> from StringIO import StringIO
->>> content = StringIO(urlopen('http://....').read())
->>> exml = etree.parse(content)
->>> ts = WMDRTestSuite(exml)
->>> ts.run_tests()  # raises ValueError error stack on exception
->>> # handle ats.TestSuiteError
->>> # ats.TestSuiteError.errors is a list of errors
->>> try:
-...    ts.run_tests()
-... except ats.TestSuiteError as err:
-...    print('\n'.join(err.errors))
->>> ...
->>> # test KPI
->>> from pywcmp.kpi import WMDRKeyPerformanceIndicators
->>> kpis = WMDRKeyPerformanceIndicators(exml)
->>> results = kpis.evaluate()
->>> results['summary']
->>> # scoring rubric
->>> grouped = group_kpi_results(results)
+>>> content = StringIO(urlopen('https://....').read())
+>>> data = json.loads(content)
+>>> ts = WMOCoreMetadataProfileTestSuite2(data)
+>>> ts.run_tests()
+>>> ts.raise_for_status()  # raises pywmdr.errors.TestSuiteError on exception with list of errors captured in .errors property
 ```
 
-KPI definitions being developed on this branch: https://github.com/wmo-im/wmdr/tree/issue42
+## Development
 
-## Additional tools
+```bash
+python3 -m venv pywmdr
+cd pywmdr
+source bin/activate
+git clone https://github.com/World-Meteorological-Organization/pywmdr.git
+pip3 install -r requirements.txt
+pip3 install -r requirements-dev.txt
+python3 setup.py install
+```
 
-### metrics
+### Running tests
 
-This command evaluates (all or selected) KPIS for all files matching a given path (accepts bash wildcards), saves the results as .json files and optionally computes statistics from the resulting scores, including percentiles and mean for each KPI and final score.
+```bash
+python3 tests/run_tests.py
+```
 
-    $ pywmdr metrics --help
-    Usage: pywmdr metrics [OPTIONS] {evaluate|metrics} PATH
+## Releasing
 
-    Options:
-        -o, --output_dir PATH       Save the results onto this location
-        -m, --compute_metrics PATH  Compute metrics and save the results onto this
-                                    file
-        -k, --kpi INTEGER           Compute selected kpi only
-        -s, --skip_schema_eval      skip evaluation of schema (kpi 1-01)
-        --help                      Show this message and exit.
-example:
+```bash
+# create release (x.y.z is the release version)
+vi pywmdr/__init__.py  # update __version__
+git commit -am 'update release version x.y.z'
+git push origin master
+git tag -a x.y.z -m 'tagging release version x.y.z'
+git push --tags
 
-    pywmdr metrics evaluate "data/records/*.xml" -o data/evaluations
-    pywmdr metrics metrics "data/evaluations/*.json" -m metrics.json
+# upload to PyPI
+rm -fr build dist *.egg-info
+python3 setup.py sdist bdist_wheel --universal
+twine upload dist/*
 
-### harvest
+# publish release on GitHub (https://github.com/wmo-im/pywmdr/releases/new)
 
-This command can be used to bulk download wmdr metadata records from a OAI REST endpoint (defaults to OSCAR)
+# bump version back to dev
+vi pywmdr/__init__.py  # update __version__
+git commit -am 'back to dev'
+git push origin master
+```
 
-    $ pywmdr harvest --help
-    Usage: pywmdr harvest [OPTIONS] {identifiers|records|record} OUTPUT
+## Code Conventions
 
-    Bulk download WMDR records from OAI web service
+[PEP8](https://www.python.org/dev/peps/pep-0008)
 
-    ACTION is the action to perform. Options are
+## Issues
 
-        - identifiers: request record identifiers.
+Issues are managed at https://github.com/wmo-im/pywmdr/issues
 
-        - records: request records.
+## Contact
 
-        - record: request record by identifier"
-
-    OUTPUT is the directory where to save results
-
-    Options:
-    -s, --set_spec TEXT         Retrieve only records with the specified setSpec
-                                attribute
-    -e, --endpoint TEXT         OAI web service endpoint
-    -i, --identifier TEXT       Record identifier. Valid only for action=record
-    -p, --metadata_prefix TEXT  Metadata prefix. Defaults to wmdr
-    --help                      Show this message and exit.
-Examples:
-
-    pywmdr harvest records data/records -s airFixed
-    pywmdr harvest record data/records -i 0-20000-0-15118
+* [Tom Kralidis](https://github.com/tomkralidis)

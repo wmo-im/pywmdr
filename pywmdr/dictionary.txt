@@ -1,2 +1,0 @@
-# add custom dictionary words below (one per line)
-# as part of spellchecker functionality
