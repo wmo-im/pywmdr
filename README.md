@@ -4,7 +4,7 @@
 
 # WIGOS Metadata Record Test Suite
 
-pywmdr provides validation and quality assessment capabilities for the [WIGOS Metadata Record](https://wmo-im.github.io/wmdr) (WMDR2) standard.
+pywmdr provides validation and quality assessment capabilities for the [WIGOS Metadata Record](https://wmo-im.github.io/wmdr2) (WMDR2) standard.
 
 - validation against [WMDR2](https://wmo-im.github.io/wmdr2/standard/wmdr2-DRAFT.html), specifically [Annex A: Conformance Class Abstract Test Suite](https://wmo-im.github.io/wmdr2/standard/wmdr2-DRAFT.html#_conformance_class_abstract_test_suite_normative)), implementing an executable test suite against the ATS
 
