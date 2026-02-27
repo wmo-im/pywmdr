@@ -1,8 +1,4 @@
-###############################################################################
-#
-# Authors: Tom Kralidis <tomkralidis@gmail.com>
-#
-# Copyright (c) 2026 Tom Kralidis
+##############################################################################
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -23,20 +19,27 @@
 #
 ###############################################################################
 
+import logging
+import sys
+
 import click
 
-from pywmdr.record import record
-from pywmdr.bundle import bundle
-from pywmdr.util import get_package_version
 
-__version__ = get_package_version()
+def OPTION_VERBOSITY(f):
+    logging_options = ['ERROR', 'WARNING', 'INFO', 'DEBUG']
+
+    def callback(ctx, param, value):
+        value2 = value or 'INFO'
+        logging.basicConfig(stream=sys.stdout,
+                            level=getattr(logging, value2))
+        return True
+
+    return click.option('--verbosity', '-v',
+                        type=click.Choice(logging_options),
+                        help='Verbosity',
+                        callback=callback)(f)
 
 
-@click.group()
-@click.version_option(version=__version__)
-def cli():
-    pass
-
-
-cli.add_command(bundle)
-cli.add_command(record)
+def cli_callbacks(f):
+    f = OPTION_VERBOSITY(f)
+    return f

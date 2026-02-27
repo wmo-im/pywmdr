@@ -1,8 +1,4 @@
-###############################################################################
-#
-# Authors: Tom Kralidis <tomkralidis@gmail.com>
-#
-# Copyright (c) 2026 Tom Kralidis
+##############################################################################
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -22,21 +18,3 @@
 # under the License.
 #
 ###############################################################################
-
-import click
-
-from pywmdr.record import record
-from pywmdr.bundle import bundle
-from pywmdr.util import get_package_version
-
-__version__ = get_package_version()
-
-
-@click.group()
-@click.version_option(version=__version__)
-def cli():
-    pass
-
-
-cli.add_command(bundle)
-cli.add_command(record)

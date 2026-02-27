@@ -1,8 +1,4 @@
-###############################################################################
-#
-# Authors: Tom Kralidis <tomkralidis@gmail.com>
-#
-# Copyright (c) 2026 Tom Kralidis
+##############################################################################
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -23,30 +19,9 @@
 #
 ###############################################################################
 
-import os
-import unittest
-
-
-def get_test_file_path(filename):
-    """helper function to open test file safely"""
-
-    if os.path.isfile(filename):
-        return filename
-    else:
-        return f'tests/{filename}'
-
-
-class WMDR2ETSTest(unittest.TestCase):
-    """WMDR2 ETS tests of tests"""
-
-    def setUp(self):
-        """setup test fixtures, etc."""
-        pass
-
-    def tearDown(self):
-        """return to pristine state"""
-        pass
-
-
-if __name__ == '__main__':
-    unittest.main()
+class TestSuiteError(Exception):
+    """custom exception handler"""
+    def __init__(self, message, errors):
+        """set error list/stack"""
+        super(TestSuiteError, self).__init__(message)
+        self.errors = errors
