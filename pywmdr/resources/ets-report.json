@@ -1,6 +1,6 @@
 {
     "$schema: https://json-schema.org/draft/2020-12/schema",
-    "$id: "https://raw.githubusercontent.com/wmo-im/pywmdr/refs/heads/main/pywmdr/resources/ets-report.json",
+    "$id": "https://raw.githubusercontent.com/wmo-im/pywmdr/refs/heads/main/pywmdr/resources/ets-report.json",
     "type": "object",
     "title": "WMDR2 Executable Test Suite report",
     "description": "WMDR2 Executable Test Suite report",
