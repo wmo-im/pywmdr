@@ -1,0 +1,94 @@
+{
+    "id": "urn:wmo:md:ke-meteo:0-20008-0-NRB",
+    "type": "Feature",
+    "conformsTo": [
+        "http://wis.wmo.int/spec/wmdr/2/conf/core"
+    ],
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            36.75919,
+            -1.30169,
+            1795.0
+        ]
+    },
+    "properties": {
+        "created": "1996-01-01T00:00:00Z",
+        "wmo:dataPolicy": "core",
+        "contacts": [
+            {
+                "name": "World Meteorological Organization WMO and Federal Office for Meteorology and Climatology MeteoSwiss",
+                "organization": "World Meteorological Organization WMO and Federal Office for Meteorology and Climatology MeteoSwiss",
+                "emails": [
+                    {
+                        "value": "oscar@wmo.int"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "7bis, avenue de la Paix"
+                        ],
+                        "city": "Geneva",
+                        "postalCode": "CH-1211",
+                        "country": "Switzerland"
+                    }
+                ],
+                "contactInstructions": "email",
+                "links": [
+                    {
+                        "rel": "canonical",
+                        "type": "text/html",
+                        "href": "https://oscar.wmo.int/surface"
+                    }
+                ],
+                "roles": [
+                    "host"
+                ]
+            },
+            {
+                "name": "Waweru,Amos,Mr",
+                "organization": "Kenyan Meteorological Department",
+                "phones": [
+                    {
+                        "value": "+254723521586"
+                    }
+                ],
+                "emails": [
+                    {
+                        "value": "waweru_k@yahoo.com"
+                    },
+                    {
+                        "value": "amoskamau1969@gmail.com"
+                    }
+                ],
+                "addresses": [
+                    {
+                        "deliveryPoint": [
+                            "Kenya Meteorological Department 30259\nNairobi \nKenya"
+                        ],
+                        "city": "Nairobi",
+                        "administrativeArea": "NB",
+                        "postalCode": "00100",
+                        "country": "Kenya"
+                    }
+                ],
+                "contactInstructions": "africa",
+                "roles": [
+                    "processor",
+                    "producer"
+                ]
+            }
+        ]
+    },
+    "links": [
+        {
+            "rel": "license",
+            "href": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+            "rel": "stations",
+            "href": "http://www.meteo.go.ke/obsv/ozone.html"
+        }
+    ]
+}

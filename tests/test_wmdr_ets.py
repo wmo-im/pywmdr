@@ -1,8 +1,4 @@
-###############################################################################
-#
-# Authors: Tom Kralidis <tomkralidis@gmail.com>
-#
-# Copyright (c) 2026 Tom Kralidis
+##############################################################################
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements.  See the NOTICE file
@@ -23,20 +19,33 @@
 #
 ###############################################################################
 
-import click
+import json
 
-from pywmdr.record import record
-from pywmdr.bundle import bundle
-from pywmdr.util import get_package_version
+import pytest
 
-__version__ = get_package_version()
+from pywmdr.wmdr2.ets import WMDR2TestSuite
 
-
-@click.group()
-@click.version_option(version=__version__)
-def cli():
-    pass
+from .util import get_test_file_path
 
 
-cli.add_command(bundle)
-cli.add_command(record)
+@pytest.mark.parametrize("filename, failed, passed, skipped, warnings_", [
+    # ('wmdr2-passing.json', 0, 1, 0, 0)
+])
+def test_ets(filename, failed, passed, skipped, warnings_):
+    """Simple tests for a passing record"""
+
+    with get_test_file_path(filename).open() as fh:
+        data = json.load(fh)
+
+    ts = WMDR2TestSuite(data)
+    results = ts.run_tests()
+
+    assert results['report_type'] == 'ets'
+    assert results['metadata_id'] == data['id']
+
+    codes = [r['code'] for r in results['tests']]
+
+    assert codes.count('FAILED') == failed
+    assert codes.count('PASSED') == passed
+    assert codes.count('SKIPPED') == skipped
+    assert codes.count('WARNINGS') == warnings_

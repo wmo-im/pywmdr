@@ -1,3 +1,57 @@
 [build-system]
-requires = ["setuptools>=46.4", "wheel"]
+requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "pywmdr"
+version = "0.2.dev0"
+description = "A Python implementation of the test suite for WIGOS Metadata Record"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE.md"]
+keywords = ["wmo", "wigos", "station metadata", "test suite"]
+authors = [
+    {name = "Tom Kralidis", email = "tomkralidis@gmail.com"}
+]
+maintainers = [
+    {name = "Tom Kralidis", email = "tomkralidis@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+    "Topic :: Scientific/Engineering :: GIS"
+]
+dependencies = [
+    "click",
+    "jsonschema",
+    "rfc3339-validator",
+    "rfc3987",
+    "shapely"
+]
+
+[project.optional-dependencies]
+dev = ["flake8"]
+release = ["build", "twine", "wheel"]
+test = ["pytest"]
+
+[project.scripts]
+pywmdr = "pywmdr:cli"
+
+[project.urls]
+homepage = "https://github.com/wmo-im/pywmdr"
+source = "https://github.com/wmo-im/pywmdr"
+documentation = "https://github.com/wmo-im/pywmdr"
+issues = "https://github.com/wmo-im/pywmdr/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+"pywmdr" = ["*.json", "**/*.json"]
