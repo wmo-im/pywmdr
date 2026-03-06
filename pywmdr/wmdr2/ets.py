@@ -119,7 +119,7 @@ class WMDR2TestSuite:
             'code': 'PASSED'
         }
 
-        schema = WMDR2_FILES / 'eomp-bundled.json'
+        schema = WMDR2_FILES / 'wmdr2-bundled.json'
 
         if not schema.exists():
             msg = "WMDR2 schema missing. Run 'pywmdr bundle sync' to cache"
