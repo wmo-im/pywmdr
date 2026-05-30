@@ -29,8 +29,8 @@ from pywmdr.util import parse_wmdr2, urlopen_
 
 
 @click.group()
-def record():
-    """WMDR2 record utilities"""
+def ets():
+    """executable test suite"""
     pass
 
 
@@ -69,4 +69,4 @@ def validate(ctx, file_or_url, verbosity):
     ctx.exit(results['summary']['FAILED'])
 
 
-record.add_command(validate)
+ets.add_command(validate)
