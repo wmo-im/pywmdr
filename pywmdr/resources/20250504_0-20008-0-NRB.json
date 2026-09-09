@@ -1,5 +1,5 @@
 {
-    "id": "urn:wmo:md:ke-meteo:0-20008-0-NRB",
+    "id": "0-20008-0-NRB",
     "type": "Feature",
     "conformsTo": [
         "http://wis.wmo.int/spec/wmdr/2/conf/core"
