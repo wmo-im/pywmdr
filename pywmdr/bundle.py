@@ -19,6 +19,8 @@
 #
 ###############################################################################
 
+import csv
+import io
 import logging
 from pathlib import Path
 import shutil
@@ -38,6 +40,8 @@ TEMPDIR2 = Path(tempfile.TemporaryDirectory().name)
 
 WMDR2_FILES = get_userdir() / 'wmdr2'
 WMDR2_FILES_TEMP = TEMPDIR2 / 'wmdr2'
+WMDS_DIR = get_userdir() / 'wmds'
+WMDS_DIR_TEMP = TEMPDIR2 / 'wmds'
 
 
 @click.group()
@@ -60,6 +64,21 @@ def sync(ctx, verbosity):
     json_schema = WMDR2_FILES_TEMP / 'wmdr2-bundled.json'
     with json_schema.open('wb') as fh:
         fh.write(urlopen_(f'{WMDR2_SCHEMA}').read())
+
+    LOGGER.debug('Caching codelists')
+    LOGGER.debug(f'Downloading WMDS codelists to {WMDS_DIR_TEMP}')
+    WMDS_DIR_TEMP.mkdir(parents=True, exist_ok=True)
+    WMDS_CODELISTS_LIST = 'https://codes.wmo.int/wmdr?_format=csv&_view=with_metadata&status=valid'  # noqa
+    codelists = urlopen_(WMDS_CODELISTS_LIST).read().decode('utf-8')
+    codelists_fh = io.StringIO(codelists.strip())
+    reader = csv.reader(codelists_fh)
+    for row in reader:
+        codelist_url = f'https://codes.wmo.int/wmdr/{row[1]}?_format=csv&_view=with_metadata&status=valid'  # noqa
+        LOGGER.debug(f'Downloading {codelist_url}')
+        codelist_file = WMDS_DIR_TEMP / f'{row[1]}.csv'
+        LOGGER.debug(f'Writing codelist {codelist_file}')
+        with codelist_file.open('wb') as fh:
+            fh.write(urlopen_(codelist_url).read())
 
     LOGGER.debug(f'Removing {USERDIR}')
     if USERDIR.exists():
