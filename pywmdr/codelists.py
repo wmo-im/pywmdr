@@ -88,7 +88,7 @@ class WMDSCodelists:
                 with filename.open() as fh:
                     reader = csv.DictReader(fh)
                     for row in reader:
-                        self.codelists[key].append(row['skos:notation'])
+                        self.codelists[key].append(row['@notation'])
 
     def is_valid(self, pname: str, pvalue: dict | None) -> bool:
         """
@@ -107,8 +107,12 @@ class WMDSCodelists:
             raise ValueError(msg)
 
         if pvalue is None:
+            LOGGER.debug('Value is null')
             return True
 
+        LOGGER.debug(f'Property name: {pname}')
+        LOGGER.debug(f'Property value: {pvalue}')
+        LOGGER.debug(f'Codelist: {self.codelists[pname]}')
         if pvalue['id'] in self.codelists[pname]:
             return True
 

@@ -43,7 +43,7 @@ def gen_test_id(test_id: str) -> str:
     :returns: test identifier as URI
     """
 
-    return f'http://wis.wmo.int/spec/wmdr/2/conf/core/{test_id}'
+    return f'http://wigos.wmo.int/spec/wmdr/2/conf/core/{test_id}'
 
 
 class WMDR2TestSuite:
@@ -143,6 +143,73 @@ class WMDR2TestSuite:
                 status['code'] = 'FAILED'
                 status['message'] = f'{len(validation_errors)} error(s)'
                 status['errors'] = validation_errors
+
+        return status
+
+    def test_requirement_codelisted_values(self):
+        """
+        Test property values against required codelists
+        """
+
+        validation_errors = []
+
+        status = {
+            'id': gen_test_id('codelisted_values'),
+            'code': 'PASSED'
+        }
+
+        codelisted_values = []
+
+        LOGGER.debug('Validating against codelisted values')
+
+        codelisted_values.append(
+            ('facilityType', [self.record['properties']['facilityType']]))
+
+        codelisted_values.append(
+            ('wmoRegion', [self.record['properties']['wmoRegion']]))
+
+        for territory in self.record['properties'].get('territories', []):
+            codelisted_values.append(('territory', [territory['territory']]))
+
+        for observation in self.record['properties']['observations']:
+            codelisted_values.append(
+                ('observedGeometry', [observation.get('observedGeometry')]))
+            codelisted_values.append(
+                ('observedProperty', [observation['observedProperty']]))
+
+            for program_affiliation in observation.get('programAffiliations'):
+                codelisted_values.append(
+                    ('programAffiliation', [program_affiliation['programAffiliation']]))  # noqa
+                codelisted_values.append(
+                    ('reportingStatus', [program_affiliation['reportingStatus']]))  # noqa
+
+            for configuration in observation['configurations']:
+                codelisted_values.append(
+                    ('observingMethod', [configuration.get('observingMethod')]))  # noqa
+                codelisted_values.append(
+                    ('operatingStatus', [configuration.get('operatingStatus')]))  # noqa
+                codelisted_values.append(
+                    ('sourceOfObservation', [configuration.get('sourceOfObservation')]))  # noqa
+
+                vertical_distance = configuration.get('verticalDistance')
+
+                if vertical_distance is not None:
+                    codelisted_values.append(
+                        ('unit', [vertical_distance['unit']]))
+                    codelisted_values.append(
+                        ('referenceSurface', [vertical_distance['referenceSurface']]))  # noqa
+
+        for codelisted_value in codelisted_values:
+            LOGGER.debug(f'Testing {codelisted_value[0]} against {codelisted_value[1]}')  # noqa
+            for codelisted_value2 in codelisted_value[1]:
+                if not self.codelists.is_valid(codelisted_value[0], codelisted_value2):  # noqa
+                    msg = f'Invalid codelist value for {codelisted_value[0]}'
+                    validation_errors.append(msg)
+
+        if validation_errors:
+            status['code'] = 'FAILED'
+            status['message'] = f'{len(validation_errors)} error(s)'
+            status['errors'] = validation_errors
 
         return status
 

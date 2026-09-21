@@ -60,7 +60,7 @@ LOGGER = logging.getLogger(__name__)
 with (THISDIR / 'resources' / 'ets-report.json').open() as fh:
     ETS_REPORT_SCHEMA = json.load(fh)
 
-with (THISDIR / 'resources' / '20250504_0-20008-0-NRB.json').open() as fh:
+with (THISDIR / 'resources' / '0-20008-0-THE.json').open() as fh:
     EXAMPLE_WMDR2 = json.load(fh)
 
 

@@ -23,7 +23,7 @@ jobs:
     - name: install WMDR/WMDS bundle ⚙️
       run: pywmdr bundle sync
     - name: run tests ⚙️
-      run: pytest tests
+      run: pytest
     - name: run flake8 ⚙️
       run: |
         find . -type f -name "*.py" | xargs flake8
