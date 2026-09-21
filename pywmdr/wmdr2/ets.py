@@ -27,6 +27,7 @@ from jsonschema import FormatChecker
 from jsonschema.validators import Draft202012Validator
 
 from pywmdr.bundle import WMDR2_FILES
+from pywmdr.codelists import WMDSCodelists
 from pywmdr.errors import TestSuiteError
 from pywmdr.util import get_current_datetime_rfc3339, get_package_version
 
@@ -57,6 +58,7 @@ class WMDR2TestSuite:
 
         self.version = get_package_version()
         self.errors = []
+        self.codelists = WMDSCodelists()
         self.record = record
 
     def run_tests(self):

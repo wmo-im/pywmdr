@@ -88,7 +88,31 @@ class WMDSCodelists:
                 with filename.open() as fh:
                     reader = csv.DictReader(fh)
                     for row in reader:
-                        self.codelists[key].append(row['@notation'])
+                        self.codelists[key].append(row['skos:notation'])
+
+    def is_valid(self, pname: str, pvalue: dict | None) -> bool:
+        """
+        Helper function to determine whether a concept is valid
+        (WMDS codelist or null)
+
+        :param pname: name of property/object
+        :param value: value of property/object
+
+        :returns: `bool` of whether a concept is valid
+        """
+
+        if pname not in self.codelists:
+            msg = f'{pname} not found in codelists'
+            LOGGER.error(msg)
+            raise ValueError(msg)
+
+        if pvalue is None:
+            return True
+
+        if pvalue['id'] in self.codelists[pname]:
+            return True
+
+        return False
 
     def __repr__(self):
         return '<WMDSCodelists>'
