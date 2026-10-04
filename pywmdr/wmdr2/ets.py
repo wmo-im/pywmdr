@@ -181,7 +181,7 @@ class WMDR2TestSuite:
                 codelisted_values.append(
                     ('programAffiliation', [program_affiliation['programAffiliation']]))  # noqa
                 codelisted_values.append(
-                    ('reportingStatus', [program_affiliation['reportingStatus']]))  # noqa
+                    ('reportingStatus', [program_affiliation.get('reportingStatus')]))  # noqa
 
             for configuration in observation['configurations']:
                 codelisted_values.append(
