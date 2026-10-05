@@ -81,6 +81,7 @@ PROCESS_WMDR2_ETS = {
         'href': 'https://github.com/wmo-im/wmdr2',
         'hreflang': 'en-US'
     }],
+    'jobControlOptions': ['sync-execute', 'async-execute'],
     'inputs': {
         'record': {
             'title': 'WMDR2 record',
