@@ -154,7 +154,7 @@ class WMDR2TestSuite:
         validation_errors = []
 
         status = {
-            'id': gen_test_id('codelisted_values'),
+            'id': gen_test_id('codelisted-values'),
             'code': 'PASSED'
         }
 
