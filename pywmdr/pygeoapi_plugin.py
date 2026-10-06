@@ -37,11 +37,18 @@
 #     processor:
 #         name: pywmdr.pygeoapi_plugin.WMDR2ETSProcessor
 #
+# pywmdr-wmdr2-migrate:
+#     type: process
+#     processor:
+#         name: pywmdr.pygeoapi_plugin.WMDR1toWMDR2Processor
+#
+#
 # 3. (re)start pygeoapi
 #
 # The resulting processes will be available at the following endpoints:
 #
 # /processes/pywmdr-record-validate
+# /processes/pywmdr-wmdr2-migrate
 #
 # Note that pygeoapi's OpenAPI/Swagger interface (at /openapi) will also
 # provide a developer-friendly interface to test and run requests
@@ -52,6 +59,8 @@ import logging
 
 from pygeoapi.process.base import BaseProcessor, ProcessorExecuteError
 
+from pywmdr.bundle import WMDR2_FILES
+from pywmdr.migrations import Migration
 from pywmdr.wmdr2.ets import WMDR2TestSuite
 from pywmdr.util import get_package_version, THISDIR, urlopen_
 
@@ -63,6 +72,11 @@ with (THISDIR / 'resources' / 'ets-report.json').open() as fh:
 with (THISDIR / 'resources' / '0-20008-0-THE.json').open() as fh:
     EXAMPLE_WMDR2 = json.load(fh)
 
+with (THISDIR / 'resources' / '0-20000-0-87582.xml').open() as fh:
+    EXAMPLE_WMDR1 = fh.read()
+
+with (WMDR2_FILES / 'wmdr2-bundled.json').open() as fh:
+    WMDR2_SCHEMA = json.load(fh)
 
 PROCESS_WMDR2_ETS = {
     'version': get_package_version(),
@@ -113,6 +127,55 @@ PROCESS_WMDR2_ETS = {
 }
 
 
+PROCESS_MIGRATE = {
+    'version': get_package_version(),
+    'id': 'pywmdr-wmdr2-migrate',
+    'title': {
+        'en': 'WMDR1 to WMDR2 migration utility'
+    },
+    'description': {
+        'en': 'Migrate a WMDR1 XML into WMDR2'
+    },
+    'keywords': ['wigos', 'wmdr2', 'wmdr1', 'migrate', 'metadata'],
+    'links': [{
+        'type': 'text/html',
+        'rel': 'about',
+        'title': 'information',
+        'href': 'https://github.com/wmo-im/wmdr2',
+        'hreflang': 'en-US'
+    }],
+    'jobControlOptions': ['sync-execute', 'async-execute'],
+    'inputs': {
+        'record': {
+            'title': 'WMD1 record',
+            'description': 'WMDR1 record (can be inline or remote link)',
+            'schema': {
+                'type': ['object', 'string']
+            },
+            'minOccurs': 1,
+            'maxOccurs': 1,
+            'metadata': None,
+            'keywords': ['wmdr1']
+        }
+    },
+    'outputs': {
+        'result': {
+            'title': 'WMDR1 to WMDR2 migration result',
+            'description': 'WMDR1 to WMDR2 migration result',
+            'schema': {
+                'contentMediaType': 'application/geo+json',
+                **WMDR2_SCHEMA
+            }
+        }
+    },
+    'example': {
+        'inputs': {
+            'record': EXAMPLE_WMDR2
+        }
+    }
+}
+
+
 class WMDR2ETSProcessor(BaseProcessor):
     """WMDR2 ETS"""
 
@@ -151,3 +214,43 @@ class WMDR2ETSProcessor(BaseProcessor):
 
     def __repr__(self):
         return '<WMDR2ETSProcessor>'
+
+
+class WMDR2MigrateProcessor(BaseProcessor):
+    """Migrate processor"""
+
+    def __init__(self, processor_def):
+        """
+        Initialize object
+
+        :param processor_def: provider definition
+
+        :returns: pywmdr.pygeoapi_plugin.WMDR2MigrateProcessor
+        """
+
+        super().__init__(processor_def, PROCESS_MIGRATE)
+
+    def execute(self, data, outputs=None):
+
+        response = None
+        mimetype = 'application/json'
+        record = data.get('record')
+
+        if record is None:
+            msg = 'Missing record'
+            LOGGER.error(msg)
+            raise ProcessorExecuteError(msg)
+
+        if isinstance(record, str) and record.startswith('http'):
+            LOGGER.debug('Record is a link')
+            record = json.loads(urlopen_(record).read())
+        else:
+            LOGGER.debug('Record is inline')
+
+        LOGGER.debug('Running ETS against record')
+        response = Migration(record).migrate()
+
+        return mimetype, response
+
+    def __repr__(self):
+        return '<WMDR2MigrateProcessor>'

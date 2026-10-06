@@ -25,6 +25,13 @@ import sys
 import click
 
 
+OPTION_OUTPUT = click.option(
+    '--output',
+    '-o',
+    type=click.File('w', encoding='utf-8'),
+    help='Name of output file')
+
+
 def OPTION_VERBOSITY(f):
     logging_options = ['ERROR', 'WARNING', 'INFO', 'DEBUG']
 

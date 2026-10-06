@@ -1,0 +1,3188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmdr:WIGOSMetadataRecord xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:wmdr="http://def.wmo.int/wmdr/2017" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:ns6="http://def.wmo.int/opm/2013" xmlns:ns7="http://def.wmo.int/metce/2013" xmlns:om="http://www.opengis.net/om/2.0" xmlns:ns9="http://www.isotc211.org/2005/gts" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:sams="http://www.opengis.net/samplingSpatial/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://def.wmo.int/wmdr/2017 http://schemas.wmo.int/wmdr/1.0RC9/wmdr.xsd">
+  <gml:boundedBy xsi:nil="true"/>
+  <wmdr:headerInformation>
+    <wmdr:Header>
+      <wmdr:fileDateTime>2026-09-21T00:00:00Z</wmdr:fileDateTime>
+      <wmdr:recordOwner>
+        <gmd:CI_ResponsibleParty id="wmo_meteoswiss">
+          <gmd:organisationName>
+            <gco:CharacterString>World Meteorological Organization WMO and Federal Office for Meteorology and Climatology MeteoSwiss</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:contactInfo xlink:type="simple">
+            <gmd:CI_Contact>
+              <gmd:address xlink:type="simple">
+                <gmd:CI_Address>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>oscar@wmo.int</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>https://oscar.wmo.int/surface/#/feedback</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource xlink:type="simple">
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>https://oscar.wmo.int/surface</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="custodian"/>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </wmdr:recordOwner>
+    </wmdr:Header>
+  </wmdr:headerInformation>
+  <wmdr:facility>
+    <wmdr:ObservingFacility>
+      <gml:identifier codeSpace="0-20000-0-87582">0-20000-0-87582</gml:identifier>
+      <gml:name>AEROPARQUE AERO</gml:name>
+      <gml:boundedBy xsi:nil="true"/>
+      <wmdr:responsibleParty>
+        <wmdr:ResponsibleParty>
+          <wmdr:responsibleParty>
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </wmdr:responsibleParty>
+          <wmdr:validPeriod xlink:type="simple">
+            <gml:TimePeriod gml:id="id_b074e824-15b2-7937-e053-148ef98d6de4">
+              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+              <gml:endPosition/>
+            </gml:TimePeriod>
+          </wmdr:validPeriod>
+        </wmdr:ResponsibleParty>
+      </wmdr:responsibleParty>
+      <wmdr:geospatialLocation>
+        <wmdr:GeospatialLocation>
+          <wmdr:geoLocation xlink:type="simple">
+            <gml:Point>
+              <gml:pos>-34.55891 -58.41982 6.0</gml:pos>
+            </gml:Point>
+          </wmdr:geoLocation>
+          <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+          <wmdr:validPeriod xlink:type="simple">
+            <gml:TimePeriod gml:id="id_b074e825-0dcb-7937-e053-148ef98d6de4">
+              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+              <gml:endPosition/>
+            </gml:TimePeriod>
+          </wmdr:validPeriod>
+        </wmdr:GeospatialLocation>
+      </wmdr:geospatialLocation>
+      <wmdr:description>
+        <wmdr:Description>
+          <wmdr:description>The station was originally registered based on WMO Pub 9 Vol A information containing these observation remarks: A;CLIMAT(C);METAR;RBSN(S);SUNDUR (see code table A for explanations). These remarks imply the following additional observations that could not be registered automatically: none.</wmdr:description>
+          <wmdr:validPeriod xlink:type="simple">
+            <gml:TimePeriod gml:id="id_b074e824-ba36-7937-e053-148ef98d6de4">
+              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+              <gml:endPosition/>
+            </gml:TimePeriod>
+          </wmdr:validPeriod>
+        </wmdr:Description>
+      </wmdr:description>
+      <wmdr:facilityType xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/FacilityType/landFixed"/>
+      <wmdr:dateEstablished>1949-07-01Z</wmdr:dateEstablished>
+      <wmdr:wmoRegion xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/WMORegion/southAmerica"/>
+      <wmdr:territory>
+        <wmdr:Territory>
+          <wmdr:territoryName xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/TerritoryName/ARG"/>
+          <wmdr:validPeriod xlink:type="simple">
+            <gml:TimePeriod gml:id="id_b074e824-5df0-7937-e053-148ef98d6de4">
+              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+              <gml:endPosition/>
+            </gml:TimePeriod>
+          </wmdr:validPeriod>
+        </wmdr:Territory>
+      </wmdr:territory>
+      <wmdr:programAffiliation>
+        <wmdr:ProgramAffiliation>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/operational"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="id_b074e827-dde2-7937-e053-148ef98d6de4">
+                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition/>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+        </wmdr:ProgramAffiliation>
+      </wmdr:programAffiliation>
+      <wmdr:programAffiliation>
+        <wmdr:ProgramAffiliation>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/CLIMATc"/>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/closed"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="e0dbe384-9437-107f-e053-148ef98dacd7">
+                  <gml:beginPosition>2022-06-07T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition/>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/operational"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="id_b074e827-dde3-7937-e053-148ef98d6de4">
+                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition>2022-06-06T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+        </wmdr:ProgramAffiliation>
+      </wmdr:programAffiliation>
+      <wmdr:programAffiliation>
+        <wmdr:ProgramAffiliation>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/closed"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="e0dbe384-9438-107f-e053-148ef98dacd7">
+                  <gml:beginPosition>2022-06-07T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition/>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/operational"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="id_b074e827-dde4-7937-e053-148ef98d6de4">
+                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition>2022-06-06T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+        </wmdr:ProgramAffiliation>
+      </wmdr:programAffiliation>
+      <wmdr:programAffiliation>
+        <wmdr:ProgramAffiliation>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/operational"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="e0dbe384-9436-107f-e053-148ef98dacd7">
+                  <gml:beginPosition>2022-06-07T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition/>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+        </wmdr:ProgramAffiliation>
+      </wmdr:programAffiliation>
+      <wmdr:programAffiliation>
+        <wmdr:ProgramAffiliation>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GUAN"/>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/closed"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="id_bd5b9bc4-c1f2-487b-9830-b8979dc2a6fa">
+                  <gml:beginPosition>2025-01-01T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition/>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/nonReporting"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="id_b940b4f6-f235-4b01-af7f-e1cc4a184e04">
+                  <gml:beginPosition>2024-10-01T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition>2024-12-30T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/operational"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="id_253aaed7-0d80-48e7-9278-17bb35df30e4">
+                  <gml:beginPosition>2023-10-01T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+        </wmdr:ProgramAffiliation>
+      </wmdr:programAffiliation>
+      <wmdr:programAffiliation>
+        <wmdr:ProgramAffiliation>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:reportingStatus>
+            <wmdr:ReportingStatus>
+              <wmdr:reportingStatus xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReportingStatus/operational"/>
+              <wmdr:validPeriod xlink:type="simple">
+                <gml:TimePeriod gml:id="e8262cec-7edc-76a6-e053-148ef98d37b0">
+                  <gml:beginPosition>2022-09-08T00:00:00Z</gml:beginPosition>
+                  <gml:endPosition/>
+                </gml:TimePeriod>
+              </wmdr:validPeriod>
+            </wmdr:ReportingStatus>
+          </wmdr:reportingStatus>
+        </wmdr:ProgramAffiliation>
+      </wmdr:programAffiliation>
+      <wmdr:surfaceCover>
+        <wmdr:SurfaceCover>
+          <wmdr:surfaceCover xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SurfaceCoverGlob2009/closedToOpenShrubland"/>
+          <wmdr:surfaceCoverClassification xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SurfaceCoverClassification/globCover2009"/>
+          <wmdr:validPeriod xlink:type="simple">
+            <gml:TimePeriod gml:id="id_b074e824-4827-7937-e053-148ef98d6de4">
+              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+              <gml:endPosition/>
+            </gml:TimePeriod>
+          </wmdr:validPeriod>
+        </wmdr:SurfaceCover>
+      </wmdr:surfaceCover>
+      <wmdr:topographyBathymetry>
+        <wmdr:TopographyBathymetry>
+          <wmdr:localTopography xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/LocalTopography/unknown"/>
+          <wmdr:relativeElevation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/RelativeElevation/low"/>
+          <wmdr:topographicContext xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/TopographicContext/hollows"/>
+          <wmdr:altitudeOrDepth xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/AltitudeOrDepth/veryLowAltitude"/>
+          <wmdr:validPeriod xlink:type="simple">
+            <gml:TimePeriod gml:id="id_b074e824-f7c3-7937-e053-148ef98d6de4">
+              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+              <gml:endPosition/>
+            </gml:TimePeriod>
+          </wmdr:validPeriod>
+        </wmdr:TopographyBathymetry>
+      </wmdr:topographyBathymetry>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_e424b0cd-c830-4756-a23d-6638e039095b">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c848-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/179"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-8905-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/24"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c3-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/unknown"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/humanObservation"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/179"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_b12c6fe5-3322-43c6-8afd-48dada28064c">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_4e3822de-e449-4d03-b50e-225ac07bafb9">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/210"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 6.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_00cdef91-79d4-4b11-871d-683591c1e953">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/59"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_02283cce-5331-4e87-8c8f-e7f63900ee0b">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/mm"/>
+                              <wmdr:temporalReportingInterval>PT6H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/DataPolicy/noLimitation"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">1.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/naturalGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Exposure/class1"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/210"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_dec49e43-5cdf-49c4-800b-1d7cec82cc19">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c849-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/216"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 7.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-0c82-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>VAISALA</wmdr:manufacturer>
+                          <wmdr:model>VAISALA_PTB330</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/111"/>
+                          <wmdr:observableRange>500 ... 1100 hPa</wmdr:observableRange>
+                          <wmdr:specifiedAbsoluteUncertainty>±0.07 hPa</wmdr:specifiedAbsoluteUncertainty>
+                          <wmdr:driftPerUnitTime>±0.1 hPa/year</wmdr:driftPerUnitTime>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c4-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/hPa"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:referenceDatum>
+                                <gml:VerticalDatum gml:id="id_846503bb-9c7d-41d6-9e5e-f0a683fd2d2d">
+                                  <gml:identifier codeSpace=""/>
+                                  <gml:remarks>mean sea level</gml:remarks>
+                                  <gml:scope/>
+                                </gml:VerticalDatum>
+                              </wmdr:referenceDatum>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">1.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/216"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_b2d4b1f6-5d2c-4576-8b9a-7b8350def7ca">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c84a-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/224"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-421f-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>Amarell</wmdr:manufacturer>
+                          <wmdr:model>Mercury in glass thermometer</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/149"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c5-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/unknown"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Exposure/class4"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/224"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GUAN"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/verticalProfile"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_d48fcde3-8e34-4130-be01-c8ccf65bd9cd">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/225"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/330"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_1d75a411-0d02-4f4f-aeaa-b0296d7ec859">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>12</wmdr:startHour>
+                              <wmdr:endHour>12</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/degC"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/DataPolicy/noLimitation"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:localReferenceSurface xlink:type="simple"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/225"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GUAN"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/verticalProfile"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_954db53c-29cb-4731-a7f9-aea214d54e37">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/227"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/330"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_f2310292-cd42-4b5b-9223-aaaecefbc1bd">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>12</wmdr:startHour>
+                              <wmdr:endHour>12</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/degC"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/DataPolicy/noLimitation"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:localReferenceSurface xlink:type="simple"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/227"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_6665b0c7-72e0-4e58-91f4-39b4fa7e4132">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c84b-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/230"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-4371-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/24"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c6-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/humanObservation"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/230"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/CLIMATc"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_59dc3a16-f20c-44e5-ac0a-2e5be39ae325">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c84c-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12249"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-bb73-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>Amarell</wmdr:manufacturer>
+                          <wmdr:model>Mercury in glass thermometer</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/340"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c7-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/degC"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Exposure/class3"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12249"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c84d-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/265"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-f0b3-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/24"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c8-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/humanObservation"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/265"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c84e-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/266"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-0c99-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/24"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10c9-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/unknown"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/humanObservation"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/266"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/CLIMATc"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_a431b885-61e1-4b5c-b5ba-8327425c9226">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c8bb-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/270"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 7.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b11c4f06-9dd9-4d4e-bca7-6679c76fabba">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>SIAP</wmdr:manufacturer>
+                          <wmdr:model>Heliograph</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/415"/>
+                          <wmdr:observableRange>0-24 h</wmdr:observableRange>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10ca-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/h"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Exposure/class2"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/270"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GUAN"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/verticalProfile"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_d994010f-64c2-43c2-b0a7-e83eae941126">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/310"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/330"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_f4ab221a-4c35-469c-9d6a-452fa7897193">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>12</wmdr:startHour>
+                              <wmdr:endHour>12</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/kt"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/DataPolicy/noLimitation"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:localReferenceSurface xlink:type="simple"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/310"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c8bd-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/531"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.56301 -58.42965 7.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e825-ed19-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2021-03-11T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>Vaisala Oyj</wmdr:manufacturer>
+                          <wmdr:model>CL31</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/245"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10cc-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/unknown"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">1.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/531"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c8be-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/550"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 8.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-3540-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/24"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10cd-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/unknown"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">2.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/humanObservation"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/550"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_6ff878c1-cc28-455a-b772-2912cde072e7">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_77a68e74-0420-4c01-bc28-5ce113041705">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableTerrestrial/629"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 6.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:geopositioningMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/GeopositioningMethod/gps"/>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_1c3d34fc-4562-446f-9316-158e8b1da08f">
+                                  <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodTerrestrial/261"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_8099d4d6-88dc-4277-bd5c-9d6d42a073c8">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>12</wmdr:startHour>
+                              <wmdr:endHour>12</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/cm"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/DataPolicy/noLimitation"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-28T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">0.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableTerrestrial/629"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GOSGeneral"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GUAN"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/verticalProfile"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty>
+                      <gmd:role/>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_ed28dcea-f56a-45f1-8fbf-5e3fabf599b9">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12000"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/330"/>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_dc6c0a38-845c-4667-8086-b551fe00909d">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>12</wmdr:startHour>
+                              <wmdr:endHour>12</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>false</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/hPa"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/DataPolicy/noLimitation"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2022-07-01T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition>2024-09-30T00:00:00Z</gml:endPosition>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:localReferenceSurface xlink:type="simple"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple"/>
+                      <wmdr:exposure xlink:type="simple"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12000"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_731cb23c-822b-4186-9d18-bf3fb328ee33">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="id_b074e829-c8bc-7937-e053-148ef98d6de4">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12005"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 16.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="id_b074e826-9c2a-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-05-31T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>Vaisala Oyj</wmdr:manufacturer>
+                          <wmdr:model>WMT703</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/60"/>
+                          <wmdr:observableRange>001 - 360 °</wmdr:observableRange>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="id_b074e82c-10cb-7937-e053-148ef98d6de4">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/deg"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">10.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Exposure/class1"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12005"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+      <wmdr:observation xlink:type="simple">
+        <wmdr:ObservingCapability>
+          <gml:boundedBy xsi:nil="true"/>
+          <wmdr:facility xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/0-20000-0-87582"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/GBON"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBSNs"/>
+          <wmdr:programAffiliation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ProgramAffiliation/RBON"/>
+          <wmdr:observation xlink:type="simple">
+            <om:OM_Observation>
+              <gml:boundedBy xsi:nil="true"/>
+              <om:type xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Geometry/point"/>
+              <om:metadata xlink:type="simple">
+                <gmd:MD_Metadata>
+                  <gmd:contact xlink:type="simple">
+                    <gmd:CI_ResponsibleParty id="id_a0aba2ed-e981-4df6-a963-84872b9302e2">
+                      <gmd:organisationName>
+                        <gco:CharacterString>Servicio Meteorologico Nacional (National Meteorological Service of Argentina)</gco:CharacterString>
+                      </gmd:organisationName>
+                      <gmd:role>
+                        <gmd:CI_RoleCode codeList="https://standards.iso.org/iso/19115/resources/Codelists/gml/CI_RoleCode.xml/owner" codeListValue="owner"/>
+                      </gmd:role>
+                    </gmd:CI_ResponsibleParty>
+                  </gmd:contact>
+                  <gmd:dateStamp>
+                    <gco:Date xsi:nil="true"/>
+                  </gmd:dateStamp>
+                  <gmd:identificationInfo xlink:type="simple"/>
+                </gmd:MD_Metadata>
+              </om:metadata>
+              <om:phenomenonTime xlink:type="simple"/>
+              <om:resultTime xlink:type="simple"/>
+              <om:procedure xlink:type="simple">
+                <wmdr:Process>
+                  <gml:boundedBy xsi:nil="true"/>
+                  <wmdr:deployment xlink:type="simple">
+                    <wmdr:Deployment gml:id="cca8c9b3-4d20-23ea-e053-148ef98d1a71">
+                      <gml:boundedBy xsi:nil="true"/>
+                      <wmdr:deployedEquipment xlink:type="simple">
+                        <wmdr:Equipment>
+                          <gml:identifier codeSpace="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12006"/>
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:responsibleParty>
+                            <wmdr:ResponsibleParty>
+                              <wmdr:responsibleParty>
+                                <gmd:CI_ResponsibleParty>
+                                  <gmd:role/>
+                                </gmd:CI_ResponsibleParty>
+                              </wmdr:responsibleParty>
+                            </wmdr:ResponsibleParty>
+                          </wmdr:responsibleParty>
+                          <wmdr:geospatialLocation>
+                            <wmdr:GeospatialLocation>
+                              <wmdr:geoLocation xlink:type="simple">
+                                <gml:Point>
+                                  <gml:pos>-34.55891 -58.41982 16.0</gml:pos>
+                                </gml:Point>
+                              </wmdr:geoLocation>
+                              <wmdr:validPeriod xlink:type="simple">
+                                <gml:TimePeriod gml:id="shared2_id_b074e826-9c2a-7937-e053-148ef98d6de4">
+                                  <gml:beginPosition>2016-05-31T00:00:00Z</gml:beginPosition>
+                                  <gml:endPosition/>
+                                </gml:TimePeriod>
+                              </wmdr:validPeriod>
+                            </wmdr:GeospatialLocation>
+                          </wmdr:geospatialLocation>
+                          <wmdr:manufacturer>Vaisala Oyj</wmdr:manufacturer>
+                          <wmdr:model>WMT703</wmdr:model>
+                          <wmdr:observingMethod xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservingMethodAtmosphere/60"/>
+                          <wmdr:observableRange>0-75 m/s</wmdr:observableRange>
+                          <wmdr:equipmentLog xlink:type="simple">
+                            <wmdr:EquipmentLog>
+                              <gml:boundedBy xsi:nil="true"/>
+                              <wmdr:equipment xlink:type="simple"/>
+                            </wmdr:EquipmentLog>
+                          </wmdr:equipmentLog>
+                        </wmdr:Equipment>
+                      </wmdr:deployedEquipment>
+                      <wmdr:dataGeneration xlink:type="simple">
+                        <wmdr:DataGeneration gml:id="cca8c9b3-4d21-23ea-e053-148ef98d1a71">
+                          <gml:boundedBy xsi:nil="true"/>
+                          <wmdr:validPeriod xlink:type="simple">
+                            <gml:TimePeriod>
+                              <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                              <gml:endPosition/>
+                            </gml:TimePeriod>
+                          </wmdr:validPeriod>
+                          <wmdr:schedule>
+                            <wmdr:Schedule>
+                              <wmdr:startMonth>1</wmdr:startMonth>
+                              <wmdr:endMonth>12</wmdr:endMonth>
+                              <wmdr:startWeekday>1</wmdr:startWeekday>
+                              <wmdr:endWeekday>7</wmdr:endWeekday>
+                              <wmdr:startHour>0</wmdr:startHour>
+                              <wmdr:endHour>23</wmdr:endHour>
+                              <wmdr:startMinute>0</wmdr:startMinute>
+                              <wmdr:endMinute>59</wmdr:endMinute>
+                              <wmdr:diurnalBaseTime>00:00:00Z</wmdr:diurnalBaseTime>
+                            </wmdr:Schedule>
+                          </wmdr:schedule>
+                          <wmdr:sampling>
+                            <wmdr:Sampling/>
+                          </wmdr:sampling>
+                          <wmdr:processing>
+                            <wmdr:Processing/>
+                          </wmdr:processing>
+                          <wmdr:reporting>
+                            <wmdr:Reporting>
+                              <wmdr:internationalExchange>true</wmdr:internationalExchange>
+                              <wmdr:uom xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/unit/kt"/>
+                              <wmdr:temporalReportingInterval>PT1H</wmdr:temporalReportingInterval>
+                              <wmdr:timeStampMeaning xlink:type="simple"/>
+                              <wmdr:dataPolicy>
+                                <wmdr:DataPolicy>
+                                  <wmdr:dataPolicy xlink:type="simple"/>
+                                  <wmdr:attribution>
+                                    <wmdr:Attribution>
+                                      <wmdr:originator>
+                                        <gmd:CI_ResponsibleParty>
+                                          <gmd:role/>
+                                        </gmd:CI_ResponsibleParty>
+                                      </wmdr:originator>
+                                    </wmdr:Attribution>
+                                  </wmdr:attribution>
+                                </wmdr:DataPolicy>
+                              </wmdr:dataPolicy>
+                              <wmdr:referenceTimeSource xlink:type="simple"/>
+                              <wmdr:levelOfData xlink:type="simple"/>
+                              <wmdr:dataFormat xlink:type="simple"/>
+                            </wmdr:Reporting>
+                          </wmdr:reporting>
+                        </wmdr:DataGeneration>
+                      </wmdr:dataGeneration>
+                      <wmdr:validPeriod xlink:type="simple">
+                        <gml:TimePeriod>
+                          <gml:beginPosition>2016-04-29T00:00:00Z</gml:beginPosition>
+                          <gml:endPosition/>
+                        </gml:TimePeriod>
+                      </wmdr:validPeriod>
+                      <wmdr:heightAboveLocalReferenceSurface uom="m">10.0</wmdr:heightAboveLocalReferenceSurface>
+                      <wmdr:localReferenceSurface xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ReferenceSurfaceType/localGround"/>
+                      <wmdr:applicationArea xlink:type="simple"/>
+                      <wmdr:sourceOfObservation xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/SourceOfObservation/manualReading"/>
+                      <wmdr:exposure xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/Exposure/class1"/>
+                    </wmdr:Deployment>
+                  </wmdr:deployment>
+                </wmdr:Process>
+              </om:procedure>
+              <om:observedProperty xlink:type="simple" xlink:href="http://codes.wmo.int/wmdr/ObservedVariableAtmosphere/12006"/>
+              <om:featureOfInterest xsi:nil="true"/>
+              <om:result xlink:type="simple">
+                <wmdr:ResultSet>
+                  <wmdr:distributionInfo>
+                    <gmd:MD_Distribution>
+                      <gmd:distributor xlink:type="simple">
+                        <gmd:MD_Distributor>
+                          <gmd:distributorContact xlink:type="simple">
+                            <gmd:CI_ResponsibleParty>
+                              <gmd:role/>
+                            </gmd:CI_ResponsibleParty>
+                          </gmd:distributorContact>
+                        </gmd:MD_Distributor>
+                      </gmd:distributor>
+                    </gmd:MD_Distribution>
+                  </wmdr:distributionInfo>
+                </wmdr:ResultSet>
+              </om:result>
+            </om:OM_Observation>
+          </wmdr:observation>
+        </wmdr:ObservingCapability>
+      </wmdr:observation>
+    </wmdr:ObservingFacility>
+  </wmdr:facility>
+</wmdr:WIGOSMetadataRecord>

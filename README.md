@@ -57,6 +57,15 @@ pywmdr ets validate https://example.org/path/to/file.json --verbosity DEBUG
 
 # write results to logfile
 pywmdr ets validate https://example.org/path/to/file.json --verbosity DEBUG --logfile /tmp/foo.txt
+
+# migrate WMDR1 to WMDR2 (file on disk)
+pywmdr migrate /path/to/file.xml --verbosity DEBUG
+
+# migrate WMDR1 to WMDR2 (URL)
+pywmdr migrate https://example.org/path/to/file.xml --verbosity DEBUG
+
+# migrate WMDR1 to WMDR2 (URL), write results to file
+pywmdr migrate https://example.org/path/to/file.xml --output file.json
 ```
 
 ## Using the API

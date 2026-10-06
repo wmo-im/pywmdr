@@ -28,6 +28,7 @@ import click
 from pywmdr.ets import ets
 from pywmdr.bundle import bundle
 from pywmdr.util import get_package_version
+from pywmdr.migrations import migrate
 
 __version__ = get_package_version()
 
@@ -40,3 +41,4 @@ def cli():
 
 cli.add_command(bundle)
 cli.add_command(ets)
+cli.add_command(migrate)
