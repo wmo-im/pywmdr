@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pywmdr"
-version = "0.2.dev5"
+version = "0.2.dev6"
 description = "A Python implementation of the test suite for WIGOS Metadata Record"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -55,4 +55,4 @@ where = ["."]
 exclude = ["tests*"]
 
 [tool.setuptools.package-data]
-"pywmdr" = ["*.json", "**/*.json"]
+"pywmdr" = ["*.json", "**/*.json", "*.xml", "**/*.xml"]
