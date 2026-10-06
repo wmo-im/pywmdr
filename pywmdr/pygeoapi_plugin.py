@@ -170,7 +170,7 @@ PROCESS_MIGRATE = {
     },
     'example': {
         'inputs': {
-            'record': EXAMPLE_WMDR2
+            'record': EXAMPLE_WMDR1
         }
     }
 }
