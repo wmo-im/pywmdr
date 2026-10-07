@@ -243,7 +243,7 @@ class WMDR2MigrateProcessor(BaseProcessor):
 
         if isinstance(record, str) and record.startswith('http'):
             LOGGER.debug('Record is a link')
-            record = json.loads(urlopen_(record).read())
+            record = urlopen_(record).read()
         else:
             LOGGER.debug('Record is inline')
 
