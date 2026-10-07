@@ -40,7 +40,7 @@
 # pywmdr-wmdr2-migrate:
 #     type: process
 #     processor:
-#         name: pywmdr.pygeoapi_plugin.WMDR1toWMDR2Processor
+#         name: pywmdr.pygeoapi_plugin.WMDR2MigrateProcessor
 #
 #
 # 3. (re)start pygeoapi
@@ -54,6 +54,7 @@
 # provide a developer-friendly interface to test and run requests
 #
 
+import html
 import json
 import logging
 
@@ -246,9 +247,13 @@ class WMDR2MigrateProcessor(BaseProcessor):
             record = urlopen_(record).read()
         else:
             LOGGER.debug('Record is inline')
+            record = html.unescape(record)
 
         LOGGER.debug('Running ETS against record')
-        response = Migration(record).migrate()
+        migration_ = Migration(record)
+        response = migration_.migrate()
+        if migration_.warnings:
+            response['_errors'] = migration_.warnings
 
         return mimetype, response
 
