@@ -88,7 +88,7 @@ class WMDSCodelists:
                 with filename.open() as fh:
                     reader = csv.DictReader(fh)
                     for row in reader:
-                        self.codelists[key].append(row['@notation'])
+                        self.codelists[key].append(row['id'])
 
     def is_valid(self, pname: str, pvalue: dict | None) -> bool:
         """
