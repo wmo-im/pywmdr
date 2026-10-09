@@ -19,12 +19,13 @@
 #
 ###############################################################################
 
-import csv
 import io
 import logging
+import os
 from pathlib import Path
 import shutil
 import tempfile
+import zipfile
 
 import click
 
@@ -60,25 +61,26 @@ def sync(ctx, verbosity):
     LOGGER.debug(f'Downloading WMDR2 schema to {WMDR2_FILES_TEMP}')
     WMDR2_FILES_TEMP.mkdir(parents=True, exist_ok=True)
     WMDR2_SCHEMA = 'https://raw.githubusercontent.com/wmo-im/wmdr2/refs/heads/main/schemas/wmdr2-bundled.json'  # noqa
+    WMDS_ZIPFILE_URL = 'https://wmo-im.github.io/new-oscar-architecture/wmds-csv-concepts.zip'  # noqa
 
     json_schema = WMDR2_FILES_TEMP / 'wmdr2-bundled.json'
     with json_schema.open('wb') as fh:
-        fh.write(urlopen_(f'{WMDR2_SCHEMA}').read())
+        fh.write(urlopen_(WMDR2_SCHEMA).read())
 
     LOGGER.debug('Caching codelists')
     LOGGER.debug(f'Downloading WMDS codelists to {WMDS_DIR_TEMP}')
     WMDS_DIR_TEMP.mkdir(parents=True, exist_ok=True)
-    WMDS_CODELISTS_LIST = 'https://codes.wmo.int/wmdr?_format=csv&_view=with_metadata&status=valid'  # noqa
-    codelists = urlopen_(WMDS_CODELISTS_LIST).read().decode('utf-8')
-    codelists_fh = io.StringIO(codelists.strip())
-    reader = csv.reader(codelists_fh)
-    for row in reader:
-        codelist_url = f'https://codes.wmo.int/wmdr/{row[1]}?_format=csv&_view=with_metadata&status=valid'  # noqa
-        LOGGER.debug(f'Downloading {codelist_url}')
-        codelist_file = WMDS_DIR_TEMP / f'{row[1]}.csv'
-        LOGGER.debug(f'Writing codelist {codelist_file}')
-        with codelist_file.open('wb') as fh:
-            fh.write(urlopen_(codelist_url).read())
+    FH = io.BytesIO(urlopen_(WMDS_ZIPFILE_URL).read())
+    with zipfile.ZipFile(FH) as z:
+        LOGGER.debug(f'Processing zipfile "{z.filename}"')
+        for name in z.namelist():
+            LOGGER.debug(f'Processing entry "{name}"')
+            filename = os.path.basename(name)
+
+            dest_file = WMDS_DIR_TEMP / filename
+            LOGGER.debug(f'Creating "{dest_file}"')
+            with z.open(name) as src, dest_file.open('wb') as dest:
+                shutil.copyfileobj(src, dest)
 
     LOGGER.debug(f'Removing {USERDIR}')
     if USERDIR.exists():
