@@ -61,7 +61,7 @@ def sync(ctx, verbosity):
     LOGGER.debug(f'Downloading WMDR2 schema to {WMDR2_FILES_TEMP}')
     WMDR2_FILES_TEMP.mkdir(parents=True, exist_ok=True)
     WMDR2_SCHEMA = 'https://raw.githubusercontent.com/wmo-im/wmdr2/refs/heads/main/schemas/wmdr2-bundled.json'  # noqa
-    WMDS_ZIPFILE_URL = 'https://wmo-im.github.io/new-oscar-architecture/wmds-csv-concepts.zip'  # noqa
+    WMDS_ZIPFILE_URL = 'https://wmo-im.github.io/wmds/wmds-csv-concepts.zip'
 
     json_schema = WMDR2_FILES_TEMP / 'wmdr2-bundled.json'
     with json_schema.open('wb') as fh:
