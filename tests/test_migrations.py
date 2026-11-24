@@ -40,7 +40,7 @@ def test_xpath_(xml, xpath, expected):
 
 
 @pytest.mark.parametrize("filename, wsi, facility_type, nobs", [
-    ('0-12-0-10BRACN60417.xml', '0-12-0-10BRACN60417', 'landFixed', 23)
+    ('0-12-0-10BRACN60417.xml', 'urn:wmo:md:int-wmo-test:0-12-0-10BRACN60417', 'landFixed', 23)  # noqa
 ])
 def test_wmdr1_to_wmdr2(filename, wsi, facility_type, nobs):
     """Simple tests for WMDR1 XML to WMDR2 migration"""

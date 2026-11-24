@@ -29,9 +29,9 @@ from .util import get_test_file_path
 
 
 @pytest.mark.parametrize("filename, passed, failed, skipped, warnings_", [
-    ('wmdr2-passing.json', 2, 0, 0, 0),
-    ('wmdr2-failing-invalid.json', 1, 1, 0, 0),
-    ('wmdr2-failing-codelisted-value.json', 1, 1, 0, 0)
+    ('wmdr2-passing.json', 4, 0, 0, 0),
+    ('wmdr2-failing-invalid.json', 3, 1, 0, 0),
+    ('wmdr2-failing-codelisted-value.json', 3, 1, 0, 0)
 ])
 def test_ets(filename, passed, failed, skipped, warnings_):
     """Simple tests for ETS validation"""

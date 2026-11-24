@@ -43,6 +43,8 @@ WMDR2_FILES = get_userdir() / 'wmdr2'
 WMDR2_FILES_TEMP = TEMPDIR2 / 'wmdr2'
 WMDS_DIR = get_userdir() / 'wmds'
 WMDS_DIR_TEMP = TEMPDIR2 / 'wmds'
+WIS2_TOPIC_HIERARCHY_DIR = get_userdir() / 'wis2-topic-hierarchy'
+WIS2_TOPIC_HIERARCHY_DIR_TEMP = TEMPDIR2 / 'wis2-topic-hierarchy'
 
 
 @click.group()
@@ -81,6 +83,28 @@ def sync(ctx, verbosity):
             LOGGER.debug(f'Creating "{dest_file}"')
             with z.open(name) as src, dest_file.open('wb') as dest:
                 shutil.copyfileobj(src, dest)
+
+    LOGGER.debug('Downloading WIS2 topic hierarchy')
+    WIS2_TOPIC_HIERARCHY_DIR_TEMP.mkdir(parents=True, exist_ok=True)
+
+    ZIPFILE_URL = 'https://wmo-im.github.io/wis2-topic-hierarchy/wth-bundle.zip'  # noqa
+    FH = io.BytesIO(urlopen_(ZIPFILE_URL).read())
+    with zipfile.ZipFile(FH) as z:
+        LOGGER.debug(f'Processing zipfile "{z.filename}"')
+        for name in z.namelist():
+            LOGGER.debug(f'Processing entry "{name}"')
+            filename = os.path.basename(name)
+
+            dest_file = WIS2_TOPIC_HIERARCHY_DIR_TEMP / filename
+            LOGGER.debug(f'Creating "{dest_file}"')
+            with z.open(name) as src, dest_file.open('wb') as dest:
+                shutil.copyfileobj(src, dest)
+
+    LOGGER.debug('Downloading IANA link relations')
+    IANA_URL = 'https://www.iana.org/assignments/link-relations/link-relations-1.csv'  # noqa
+    iana_file = WMDR2_FILES_TEMP / 'link-relations-1.csv'
+    with iana_file.open('wb') as fh:
+        fh.write(urlopen_(f'{IANA_URL}').read())
 
     LOGGER.debug(f'Removing {USERDIR}')
     if USERDIR.exists():
