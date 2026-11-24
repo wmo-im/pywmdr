@@ -110,7 +110,8 @@ class Migration:
         facility = tree.xpath('//wmdr:facility', namespaces=NAMESPACES)[0]
 
         val = xpath_(facility, './/wmdr:ObservingFacility/gml:identifier')
-        wmdr2['id'] = val
+        # FIXME: implement centre-id generation once defined
+        wmdr2['id'] = f'urn:wmo:md:int-wmo-test:{val}'
 
         val = xpath_(facility, './/wmdr:geospatialLocation//gml:Point/gml:pos')
 

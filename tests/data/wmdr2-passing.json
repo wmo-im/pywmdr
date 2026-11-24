@@ -1,6 +1,6 @@
 {
     "type": "Feature",
-    "id": "0-20008-0-THE",
+    "id": "urn:wmo:md:int-wmo-test:0-20008-0-THE",
     "geometry": {
         "type": "Point",
         "coordinates": [

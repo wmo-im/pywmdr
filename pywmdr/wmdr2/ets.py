@@ -21,17 +21,23 @@
 
 import json
 import logging
+import re
 import uuid
 
 from jsonschema import FormatChecker
 from jsonschema.validators import Draft202012Validator
+from pywis_topics.topics import TopicHierarchy
+
 
 from pywmdr.bundle import WMDR2_FILES
 from pywmdr.codelists import WMDSCodelists
 from pywmdr.errors import TestSuiteError
-from pywmdr.util import get_current_datetime_rfc3339, get_package_version
+from pywmdr.util import (get_current_datetime_rfc3339, get_package_version,
+                         get_userdir)
 
 LOGGER = logging.getLogger(__name__)
+
+WSI_REGEX = re.compile('^(0|1|2|3)-([1-9]\\d*)-([0-9]+)-([A-Za-z0-9\\._-]+)$')
 
 
 def gen_test_id(test_id: str) -> str:
@@ -60,11 +66,15 @@ class WMDR2TestSuite:
         self.errors = []
         self.codelists = WMDSCodelists()
         self.record = record
+        self.relax_centre_id_checks = False
+        self.th = TopicHierarchy(tables=get_userdir())
 
-    def run_tests(self):
+    def run_tests(self, relax_centre_id_checks=False):
 
         results = []
         tests = []
+
+        self.relax_centre_id_checks = relax_centre_id_checks
 
         ets_report = {
             'id': str(uuid.uuid4()),
@@ -210,6 +220,81 @@ class WMDR2TestSuite:
             status['code'] = 'FAILED'
             status['message'] = f'{len(validation_errors)} error(s)'
             status['errors'] = validation_errors
+
+        return status
+
+    def test_requirement_identifier(self):
+        """
+        Validate that a WMDR record has a valid identifier.
+        """
+
+        status = {
+            'id': gen_test_id('identifier'),
+            'code': 'PASSED'
+        }
+
+        identifier = self.record['id']
+
+        identifier_tokens = identifier.split(':', 4)
+        if len(identifier_tokens) < 5:
+            status['code'] = 'FAILED'
+            status['message'] = 'identifier does not have at least five tokens'
+            return status
+
+        if not identifier.startswith('urn:wmo:md:'):
+            status['code'] = 'FAILED'
+            status['message'] = 'bad prefix'
+            return status
+
+        if ' ' in identifier_tokens[-1]:
+            status['code'] = 'FAILED'
+            status['message'] = 'spaces in local identifier'
+            return status
+
+        centre_id = identifier_tokens[3]
+
+        if centre_id.endswith('-test'):
+            LOGGER.debug('Test centre-id, no further centre-id testing')
+        else:
+            if centre_id not in self.th.topics[3]:
+                status['code'] = 'FAILED'
+                status['message'] = f'Invalid centre_id: {centre_id}'
+
+                if self.relax_centre_id_checks:
+                    status['code'] = 'WARNING'
+
+                return status
+
+        if not identifier.isascii():
+            status['code'] = 'FAILED'
+            status['message'] = 'Invalid characters in id'
+            return status
+
+        local_identifier = identifier_tokens[-1]
+
+        if local_identifier in ['', None]:
+            status['code'] = 'FAILED'
+            status['message'] = 'Empty / null local identifier'
+            return status
+
+        match = re.search(WSI_REGEX, local_identifier)
+        if match is None:
+            status['code'] = 'FAILED'
+            status['message'] = 'Invalid WSI'
+            return status
+
+        return status
+
+    def test_requirement_conformance(self):
+        """
+        Validate that a WCMP record provides valid conformance information.
+        """
+
+        status = {
+            'id': gen_test_id('conformance'),
+            'code': 'PASSED',
+            'message': 'Passes given schema is compliant/valid'
+        }
 
         return status
 
